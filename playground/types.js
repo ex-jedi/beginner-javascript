@@ -1,26 +1,10 @@
-const person = {
-  first: 'Mark',
-  last: 'Phoenix',
-  age: 1000,
-};
+const isDrawing = false; // Explicitly set boolean
+let age = 18;
+age = 100;
 
-let dog; // Variable is undefined
+const ofAge = age > 18; // Evaluated boolean
+const whatAge = age === 99; // Another evaluated boolean
 
-console.log(dog);
-console.log(person.height); // Also undefined
+// Always use === to check equality. It checks that the value and type match.
 
-// Undefined is variable that doesn't have value set
-
-// Null is something that is deliberately set to nothing
-
-const zendaya = {
-  first: 'Zendaya',
-};
-
-const teller = {
-  first: 'Raymond',
-  last: 'Teller',
-};
-
-teller.first = 'Teller';
-teller.last = null;
+const ohNoAge = age == '100'; // Evaluates to true.

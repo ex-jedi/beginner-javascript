@@ -1,46 +1,37 @@
 /* eslint-disable */
-// Ways to declare string variables
+const age = 100;
 const name = 'Mark';
-const middle = "Robert";
-const last = `Phoenix`;
 
-// Escaping character (Better to use double quotes or backtics here)
-const sentence = 'He\'s too cool'
+console.log(typeof age);
+console.log(typeof name);
 
-// Using backtics
-const sentence2 = `He's too cool`
+// If you do maths with non numbers you get concatenation. 'The plus sign is loaded!!'
+const uhOh = 1 + "1"
+console.log('UH OH -', typeof(uhOh));
 
-// Multiple line String
+console.log(Math.round(20.5)); // Rounds up or down
+console.log(Math.round(20.3)); // Rounds up or down
+console.log(Math.floor(20.5)); // Rounds down to nearest whole number
+console.log(Math.ceil(20.2)); // Rounds up to nearest whole number
+console.log(Math.random()); // random
 
-const song = `Get
-back
-to
-where
-you
-once
-belonged!
-`
+// Dividing 20 sweets between 3 kids
+const sweets = 20;
+const kids = 3;
+const eachKidGets = Math.floor(sweets / kids); // Rounds down to nearest whole number
+console.log(`Each kid gets ${eachKidGets} sweets`);
+// What about the ones left over?
+const dadGets = sweets % kids; // Modulo operator gives number left over after division
+console.log(`Dad gets ${dadGets} sweets`);
 
-// Making HTML
-const htmlDivs = `
-<div>
-<p>
- 'Hello'
-</p>
-</div>
-`
+// Is JS maths weird? No, its just floating point maths. It's computers. Can cause issues when calculating money. Best not to use floating point numbers
 
-// Concatenation old way
+const wut = 0.1 + 0.2
+console.log('Wut', wut);
 
-const greeting = 'Hi, I am ' + name + '. Nice to meet you!'
+// window.location = `https://${wut}.com`
 
-// The new way
-const greeting2 = `Hi, I am ${name}. Nice to meet you! I am ${120 + 30} years old.`
 
-const content = `
-<div>
-  <h2>${name}</h2>
-  <p>${greeting2}</p>
-</div>`
+// When you do maths with something that isn't a number..
 
-document.body.innerHTML = content;
+console.log(100 * name); // NaN Not a number.

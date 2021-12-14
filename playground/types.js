@@ -23,3 +23,10 @@ console.log(`Each kid gets ${eachKidGets} sweets`);
 // What about the ones left over?
 const dadGets = sweets % kids; // Modulo operator gives number left over after division
 console.log(`Dad gets ${dadGets} sweets`);
+
+// Is JS maths weird? No, its just floating point maths
+
+const wut = 0.1 + 0.2
+console.log('Wut', wut);
+
+// window.location = `https://${wut}.com`

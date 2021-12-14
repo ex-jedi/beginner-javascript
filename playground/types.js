@@ -1,9 +1,5 @@
-// SNOB,N,US
-
-// String
-// Number
-// Object
-// Boolean
-// Null
-// Undefined
-// Object
+/* eslint-disable */
+// Ways to declare string variables
+const name = 'Mark';
+const middle = "Robert";
+const last = `Phoenix`;

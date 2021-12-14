@@ -24,9 +24,14 @@ console.log(`Each kid gets ${eachKidGets} sweets`);
 const dadGets = sweets % kids; // Modulo operator gives number left over after division
 console.log(`Dad gets ${dadGets} sweets`);
 
-// Is JS maths weird? No, its just floating point maths
+// Is JS maths weird? No, its just floating point maths. It's computers. Can cause issues when calculating money. Best not to use floating point numbers
 
 const wut = 0.1 + 0.2
 console.log('Wut', wut);
 
 // window.location = `https://${wut}.com`
+
+
+// When you do maths with something that isn't a number..
+
+console.log(100 * name); // NaN Not a number.

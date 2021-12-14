@@ -32,5 +32,7 @@ const htmlDivs = `
 
 // Concatenation old way
 
-
 const greeting = 'Hi, I am ' + name + '. Nice to meet you!'
+
+// The new way
+const greeting2 = `Hi, I am ${name}. Nice to meet you! I am ${120 + 30} years old.`

@@ -20,3 +20,17 @@ you
 once
 belonged!
 `
+
+// Making HTML
+const htmlDivs = `
+<div>
+<p>
+ 'Hello'
+</p>
+</div>
+`
+
+// Concatenation old way
+
+
+const greeting = 'Hi, I am ' + name + '. Nice to meet you!'

@@ -36,3 +36,11 @@ const greeting = 'Hi, I am ' + name + '. Nice to meet you!'
 
 // The new way
 const greeting2 = `Hi, I am ${name}. Nice to meet you! I am ${120 + 30} years old.`
+
+const content = `
+<div>
+  <h2>${name}</h2>
+  <p>${greeting2}</p>
+</div>`
+
+document.body.innerHTML = content;

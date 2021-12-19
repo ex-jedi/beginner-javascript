@@ -19,7 +19,8 @@ function sayHiTo(firstName) {
 }
 
 const greeting = sayHiTo('Karl');
+const kate = 220;
 
-myTotal3 = calculateBill(15 + 10 * 3, 0.19);
+myTotal3 = calculateBill(kate + 55, 0.19);
 
 console.log(myTotal3);

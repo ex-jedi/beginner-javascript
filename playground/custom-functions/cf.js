@@ -1,11 +1,11 @@
 // Function definition
 // https://courses.wesbos.com/account/access/5e4818abd9cc836465201439/view/375494555
 
-function calculateBill(billAmount, taxRate = 0.13) {
+function calculateBill(billAmount, taxRate = 0.13, tipRate = 0.15) {
   // This is the function body
   // console.log('Running Calculate Bill!');
 
-  const total = billAmount * (1 + taxRate);
+  const total = billAmount + billAmount * taxRate + billAmount * tipRate;
 
   return total;
 }
@@ -37,3 +37,7 @@ function yell(name = '') {
 }
 
 // console.log(yell(doctorize('Mark')));
+
+// How to use a default value in arguments
+const myBill4 = calculateBill(200, undefined, 0.25);
+console.log(myBill4);

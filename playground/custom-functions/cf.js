@@ -1,4 +1,4 @@
-const bill = 100;
+let bill = 100;
 const taxRate = 0.42;
 
 // Function definition
@@ -13,6 +13,6 @@ function calculateBill() {
 
 //  Function call or *run*
 const myTotal = calculateBill();
-// console.log(`Your total is £${myTotal}`);
-
-console.log(`Your total is £${calculateBill()}`);
+bill = 200;
+const myTotal2 = calculateBill();
+console.log(myTotal, myTotal2);

@@ -18,9 +18,19 @@ function sayHiTo(firstName) {
   return `Hello ${firstName}`;
 }
 
-const greeting = sayHiTo('Karl');
+// const greeting = sayHiTo('Karl');
 const kate = 220;
 
 myTotal3 = calculateBill(kate + 55, 0.19);
 
-console.log(myTotal3);
+// console.log(myTotal3);
+
+function doctorize(name) {
+  return `Dr ${name}`;
+}
+
+function yell(name) {
+  return `HEY ${name.toUpperCase()}`;
+}
+
+// console.log(yell(doctorize('Mark')));

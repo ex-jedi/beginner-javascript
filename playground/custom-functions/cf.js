@@ -19,4 +19,7 @@ function sayHiTo(firstName) {
 }
 
 const greeting = sayHiTo('Karl');
-console.log(greeting);
+
+myTotal3 = calculateBill(15 + 10 * 3, 0.19);
+
+console.log(myTotal3);

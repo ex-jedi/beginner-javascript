@@ -1,5 +1,7 @@
 // Function definition
-function calculateBill(billAmount, taxRate) {
+// https://courses.wesbos.com/account/access/5e4818abd9cc836465201439/view/375494555
+
+function calculateBill(billAmount, taxRate = 0.13) {
   // This is the function body
   // console.log('Running Calculate Bill!');
 
@@ -25,11 +27,12 @@ myTotal3 = calculateBill(kate + 55, 0.19);
 
 // console.log(myTotal3);
 
-function doctorize(name) {
+function doctorize(name = 'Carbon Unit') {
   return `Dr ${name}`;
 }
 
-function yell(name) {
+// Dwefault value empty string so it doesn't error out
+function yell(name = '') {
   return `HEY ${name.toUpperCase()}`;
 }
 

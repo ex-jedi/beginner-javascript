@@ -1,18 +1,14 @@
-let bill = 100;
-const taxRate = 0.42;
-
 // Function definition
-function calculateBill() {
+function calculateBill(billAmount, taxRate) {
   // This is the function body
   console.log('Running Calculate Bill!');
 
-  const total = bill * 1 * taxRate;
+  const total = billAmount * (1 + taxRate);
 
   return total;
 }
 
 //  Function call or *run*
-const myTotal = calculateBill();
-bill = 200;
-const myTotal2 = calculateBill();
+const myTotal = calculateBill(100, 0.13);
+const myTotal2 = calculateBill(500, 0.13);
 console.log(myTotal, myTotal2);

@@ -8,17 +8,34 @@
 // }
 
 // Wont work before it's declared
-doctorize('Mark');
+// doctorize('Mark');
 
 // Does work before it's declared and it's 'hoisted'
-doctorize2('Mark');
+// doctorize2('Mark');
 
 // Function expression
 // Stores function value as a variable. Technically an anonymous function.
-const doctorise = function (firstName) {
-  return `Dr ${firstName}`;
-};
+// const doctorise = function (firstName) {
+//   return `Dr ${firstName}`;
+// };
 
-function doctorize2(firstName) {
-  return `Dr ${firstName}`;
-}
+// Function will be hoisted
+// function doctorize2(firstName) {
+//   return `Dr ${firstName}`;
+// }
+
+// Arrow functions
+// Are anonymous functions
+
+// Regular function declaration
+// function inchToCM(inches) {
+//   return inches * 2.54;
+// }
+
+// Function expression
+// const inchToCM = function (inches) {
+//   return inches * 2.54;
+// };
+
+// Arrow function
+const inchToCM = (inches) => inches * 2.54;

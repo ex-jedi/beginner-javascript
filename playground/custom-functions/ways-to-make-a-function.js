@@ -38,7 +38,7 @@
 // };
 
 // Arrow function
-const inchToCM = (inches) => inches * 2.54;
+// const inchToCM = (inches) => inches * 2.54;
 
 // Regular function declaration
 // function add(a, b = 3) {
@@ -47,4 +47,4 @@ const inchToCM = (inches) => inches * 2.54;
 // }
 
 // ...converted to arrow function
-const add = (a, b = 3) => a + b;
+// const add = (a, b = 3) => a + b;
